@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    transition:.2s linear;
+    margin: 0; padding: 0;
+    outline: none; border: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    text-decoration: none;
+    justify-content: center;
+    user-select: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    min-width: 600px;
+    min-height: 400px;
+}
+html::-webkit-scrollbar{
+    width: .4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+body{
+
+    background-color: var(--bg);
+}
+/* hading selection start */
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg);
+    height: 9.5rem;
+    box-shadow: 0 0 1px white;
+
+}
+.header .logo img{
+    width: 7.4rem;
+    margin-left: 80%;
+    border-radius: 50%;
+
+}
+.header .navbar{
+    font-size: 1.7rem;
+    margin-left: 8rem;
+}
+.header .navbar a{
+    text-decoration: none;	
+    color: white;
+    padding: .9rem;
+    
+    font-family: 'Roboto', sans-serif;
+}
+.search {
+        margin-right: 1rem;
+        color: white;
+    }
+.search input{
+    padding-left: 1rem;
+    color: var(--black);
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+.search i{
+    font-size: 2rem;
+}
+.search label{
+    padding: 1rem;
+    font-size: 2rem;
+}
+.header .search #search{
+    color: var(--black);
+    width: 150px;
+    height: 25px;
+    border-radius: .5rem;
+}
+
+.search :hover{
+    color: var(--main-color);
+    text-shadow:0px 0px 10px chocolate;
+}
+.search :active{
+    color:#010103;
+}
+.header .logo a :hover{
+    box-shadow:0px 0px 40px chocolate;
+}
+.header .navbar a:hover{
+    font-size: 2rem;
+    color:var(--main-color);
+    text-shadow:0px 0px 20px chocolate;
+}
+.header .navbar a:active{
+    font-size: 1.8rem;
+    color:#d3ad7f;
+}
+.header .navbar a:focus-visible{
+    color:var(--main-color);
+}
+.menu-btn {
+    color: white;
+    font-size: 3re;
+}
+
+/****************** heading select end ****************/
+
+/***************** home selection start ****************/
+#home{
+    min-height: 100vh;
+    align-items: center;
+    background: url(./images/home-img.jpeg) no-repeat center center ;
+    background-size: cover;
+}
+.home .content{
+    width: 500px;
+    width: 500px;
+    margin: 0 0 0 7% ;
+    padding-top: 19rem;
+}
+.home .content h3{
+    text-transform: uppercase;
+    color: white;
+    font-size: 6rem;
+}
+.home .content p{
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 3.6rem;
+    margin-top: 10px;
+}
+.home .content .btn{
+    display: inline-block;
+    font-size: 1.7rem;
+    background-color: var(--main-color);
+    margin-top: 2rem;
+    padding: .8rem 3rem;
+    font-family:'Segoe UI', Roboto;
+    color: white;
+    font-weight: 500;
+}
+#home .content .btn :active{
+    background-color: red;
+}
+/**************** home selection ends ********************/
+
+/*************** about selection start ********************/
+#about{
+    margin-left: 7%;
+    margin-right: 7%;  
+} 
+.heading{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 4rem ;
+}
+.heading span{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
+    margin: 1rem ;  
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+   
+   
+}
+.row .image img{
+    width: 460px;
+    height: 400px;
+}
+.about .row .content{
+    width: 460px;
+    height: 400px;
+    color: white;
+    background-color: var(--black);
+    padding: 5rem 0rem 1rem 2.5rem;
+} 
+.about .row .content h3{
+    font-size: 2.6rem;
+    margin-left: .8rem;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: gainsboro;
+}
+#about .row .content a{
+    display: inline-block;
+    font-size: 1.7rem;
+    background-color: var(--main-color);
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: .8rem 3rem;
+    font-family:'Segoe UI', Roboto;
+    color: white;
+    font-weight: 500;
+}
+/******************** about selection ends **********************/
+
+/********************* menu selection start ********************/
+#menu{
+    color: white;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.menu .box-container .box{
+    display: inline-block;
+    width: 370px;
+    height: 320px;
+    border: .1rem solid rgb(92, 85, 85);
+    margin: .7rem;
+}
+.menu .box-container .box span{
+    font-size: 1.5rem;
+    text-decoration:line-through ;
+    font-weight: lighter;
+}
+.menu .box-container .box img{
+    width: 100px;
+    margin: 3rem 0 0 13.5rem;
+}
+.menu .box-container .box h3{
+    margin: 1rem 0 0 11rem;
+    font-size: 2rem;
+}
+.menu .box-container .box .price{
+    padding: 1rem 0 0 13rem;
+    font-size: 2.5rem;
+}
+.menu .box-container .box .btn{
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--main-color);
+    padding: .8rem 3.5rem;
+    margin: 2rem 0 0 11rem;
+    width: 150px;
+    display: flex;
+}
+.menu .box-container :hover{
+    background-color:white;
+    color: black;
+    transition: 0.0s;
+}
+.menu .box-container :active{
+    background-color: gainsboro;
+}
+.menu .box-container .box a:hover{
+    background-color: #d8923d;
+}
+.menu .box-container .box a:active{
+    background-color:red; 
+}
+/************************ menu selection ends ************************/
+
+/*********************** product selection start *********************/
+#products{
+    color: white;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.products .box-container .box{
+    width: 370px;
+    height: 470px;
+    border: .1rem solid rgb(92, 85, 85);
+    margin: .7rem;
+    display: inline-block;
+}
+.products .box-container .box .icon{
+    text-align: center;
+    font-size: 2rem;
+}
+.products .box-container .box .icon a{
+    padding: .9rem;
+    border: .1px solid rgb(92, 85, 85); 
+}
+.products .box-container .box .icon a{
+    color: #fff;
+    margin: .4rem;
+    margin-top: 2rem;
+}
+.products .box-container .box .image{
+    margin:2rem 0 0 10.9rem;   
+}
+.products .box-container .box .content{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0 0 0;
+    font-weight: 500;
+}
+.products .box-container .box .stars{
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 1.4rem 0 0 0;
+    color: var(--main-color);
+}
+.products .box-container .box .price{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.4rem 0 0 0;
+} 
+.products .box-container .box .price span{
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    color: gainsboro;
+}
+.products .box-container .box .icon :hover{
+    background-color: var(--main-color);
+}
+/***************** product selection ends ****************/
+
+/*************** Review selection starts *****************/
+#review{
+    margin: 0 7% 0 7%;
+    color: white;
+}
+.review .box-container .box{
+    width: 370px;
+    height: 420px;
+    border: .1rem solid rgb(92, 85, 85);
+    margin: .7rem;
+    display: inline-block;
+}
+#review .box-container .box .quote{
+    margin: 2.5rem 0 0 15rem ;
+
+}
+.review .box-container .box p{
+    margin: 2rem 1.4rem 0 1.4rem;
+    text-align: center;
+    color: rgb(203, 202, 202);
+    font-size: 1.7rem;
+    font-weight: lighter;
+    line-height: 2.8rem;
+    text-indent: 1rem;
+}
+.review .box-container .box .user{
+    border-radius: 50%;
+    width: 70px;
+    margin: 2.5rem 0 0 15rem ;
+}
+.review .box-container .box h3{
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0 0 0rem ;
+}
+.review .box-container .box .stars{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 1rem 0 0 0rem ;
+    color: var(--main-color);
+}
+.contact .login{
+    color: white;
+}
+.contact{
+    margin: 0 7% 0 7%;
+}
+.contact .heading{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 4rem;    
+}
+.contact .heading span{
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+.contact .login{
+    display: flex;
+    background-color: var(--black);
+    width: 560px;
+    height: 450px;
+	
+}
+.contact .login h3{
+    font-size: 3rem;
+    text-align: center;
+}
+.contact .map{
+    float: left;
+}
+.contact .login form .inputBox{
+margin:3rem;
+font-size:2rem;	
+
+}
+.contact .login form{
+	margin:6rem;
+}
+
+.contact .login .input-box i{
+    color: var(--bg);
+}
+.contact .login .input-box input{
+    text-align: center;
+	
+}
+.contact .login input{
+	padding:.5rem 5rem .5rem .5rem;
+	border-style:none;
+}
+.contact .login form input :focus{
+	background-color:black;
+	color:white;
+}
+	
+/**************** contact selection ends ****************/
+
+/**************** blogs selection starts ****************/
+.blogs{
+    margin: 0 7% 0 7%;
+    color: white;
+}
+.blogs .box-container .box{
+    width: 370px;
+    height: 480px;
+    border: .1rem solid rgb(92, 85, 85);
+    margin: .7rem;
+    display: inline-block;
+    overflow: hidden;
+}
+.blogs .box-container .box .content{
+    margin: 2rem 2rem ;
+    line-height: 4rem;
+}
+.blogs .box-container .box .content .title{
+    display: flex;
+    font-size: 2.8rem;
+    color: white;   
+}
+.blogs .box-container .box .content h3{
+    font-size: 2rem;
+    font-weight:400;
+    word-spacing: .3rem;
+    color: var(--main-color);
+}
+.blogs .box-container .box .content p{
+    color: rgb(203, 202, 202);
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 2.8rem;
+}
+.blogs .box-container .box .content .btn{
+    display: inline-flex;
+    background-color: var(--main-color);
+    font-size: 2rem;
+    color: white;
+    margin-top: 2rem;
+    padding:0 2.5rem;
+}
+.blogs .box-container .box .image{
+    width: 370px;
+    height: 240px;
+}
+.blogs .box-container .box .content .btn:hover{
+    padding:0 4rem;
+    background-color: #d8923d;
+}
+.blogs .box-container .box .content .btn:active{
+    background-color: red;
+    transition: 0s;
+}
+.blogs .box-container .box .content .title:hover{
+    color: var(--main-color);
+}
+.blogs .box-container .box .content .title:active{
+    color: red;
+    transition: 0s;
+}
+/***************** blogs selection ends ******************/
+
+/********************** footer starts *******************/
+.footer{
+    background-color: var(--black);
+}
+.footer .media{
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem;
+}
+.footer .media a{
+    padding: 1.5rem;
+    color: white;
+    margin: .5rem;
+    border: 1px solid gray;
+    border-radius: 50%;
+} 
+.footer .links{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+.footer .links a{
+    padding: 1rem 3rem;
+    color: white;
+    margin: .5rem;
+    border: 1px solid gray;
+}
+.footer h3{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 4.5rem 0 0 0;
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 2rem;
+} 
+.footer span{
+    color: var(--main-color);
+	
+
+}
+.footer .media :hover{
+    background-color: var(--main-color);
+    color: var(--bg);
+}
+.footer .links :hover{
+    background-color: var(--main-color);
+    color: var(--bg);
+}
+.footer .media :active{
+    background-color: red;
+} 
+.footer .links :active{
+    background-color: red;
+} 
+/********************** footer ends *******************/
